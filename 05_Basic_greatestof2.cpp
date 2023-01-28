@@ -11,6 +11,7 @@ void  greatestoftwo(int m, int n){
 // -------------------------------------------------------------------------------------
 
 //USING BRUTE FORCE APPROACH
+//USING MAX() FUNCTION
 
  
 int main()
