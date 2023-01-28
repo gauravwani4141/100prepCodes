@@ -1,26 +1,36 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
+ 
 int main()
 {
-    int num = 15;
-    int a = 0, b = 1;
-    
-    
-    cout << a << ", " << b << ", ";
-    
-    int nextTerm;
-    
-    //
-    for(int i = 2; i < num; i++){
-        nextTerm = a + b;
-        a = b;
-        b = nextTerm;
-        
-        cout << nextTerm << ", ";
-    }
+    int a=0;
+    int b=1;
+    int n;
+    cin>>n;
+    cout<<a<<" "<<b<<" ";
+    int nexterm;
 
+    for(int i=2;i<n;i++){
+        nexterm=a+b;
+        a=b;
+        b=nexterm;
+        cout<<nexterm<<" ";
+
+    }
+ 
     return 0;
 }
 
-//Or use recusion
+//--------------------------------------------------------------------------
+//FIBONACCI SERIES RECURSION SOLUTION
+
+int fibonacci(int n){
+    if(n<2){
+        return n;
+    }
+    else{
+        return fibonacci(n-1)+fibonacci(n-2);
+    }
+
+
+}
